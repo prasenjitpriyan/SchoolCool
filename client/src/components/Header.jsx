@@ -28,7 +28,7 @@ const Header = () => {
   };
 
   return (
-    <Navbar fluid rounded className="border-b-2">
+    <Navbar fluid>
       <Link to="/">
         <span className="self-center whitespace-nowrap text-2xl font-semibold dark:text-white">
           School-Cool

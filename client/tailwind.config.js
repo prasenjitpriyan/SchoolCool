@@ -6,8 +6,11 @@ export default {
     'node_modules/flowbite-react/lib/esm/**/*.js',
   ],
   theme: {
+    colors: {
+      "royalBlue": '#002366'
+    },
     extend: {},
   },
-  plugins: [require('flowbite/plugin')],
+  plugins: [require('flowbite/plugin'), require("daisyui")],
 }
 
