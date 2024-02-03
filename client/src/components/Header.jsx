@@ -1,4 +1,4 @@
-import { Avatar, Button, Dropdown, Navbar, TextInput } from "flowbite-react";
+import { Avatar, Button, Dropdown, DropdownItem, Navbar } from "flowbite-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
@@ -58,7 +58,7 @@ const Header = () => {
                 {currentUser.email}
               </span>
             </Dropdown.Header>
-            <Link to={"/dashboard?tab=profile"}>
+            <Link>
               <Dropdown.Item>Profile</Dropdown.Item>
             </Link>
             <Dropdown.Divider />
@@ -77,8 +77,133 @@ const Header = () => {
         <Navbar.Link active={path === "/"} as={"div"}>
           <Link to="/">Home</Link>
         </Navbar.Link>
-        <Navbar.Link active={path === "/about"} as={"div"}>
-          <Link to="/about">About</Link>
+        <Navbar.Link as={"div"}>
+          <Dropdown arrowIcon={false} inline label={<Link>About Us</Link>}>
+            <Link>
+              <Dropdown.Item>History</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Trustees & Governing Council</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>SPS Managing Committee</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>SPHS Managing Committee</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>School Management</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>School Song</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Aims and Objectives</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Awards and Accolades</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>The New Campus</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Mandatory Public Disclosure</Dropdown.Item>
+            </Link>
+          </Dropdown>
+        </Navbar.Link>
+        <Navbar.Link as={"div"}>
+          <Dropdown
+            arrowIcon={false}
+            inline
+            label={<Link>Infrastructure</Link>}
+          >
+            <Link>
+              <Dropdown.Item>General</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Safety Steps & Certification</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Medical Care</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Book Counter</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Canteens</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Auditorium</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Libraries</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Laboratories</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Playroom</Dropdown.Item>
+            </Link>
+          </Dropdown>
+        </Navbar.Link>
+        <Navbar.Link as={"div"}>
+          <Dropdown arrowIcon={false} inline label={<Link>Academics</Link>}>
+            <Link>
+              <Dropdown.Item>School Timings</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>School Uniform</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Rules & Regulations</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Faculty</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>The Smart Edge!</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Counselling Cell</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>School Calender</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Fee Structure</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Transfer Certificate</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Board Results</Dropdown.Item>
+            </Link>
+          </Dropdown>
+        </Navbar.Link>
+        <Navbar.Link as={"div"}>
+          <Dropdown arrowIcon={false} inline label={<Link>Admission</Link>}>
+            <Link>
+              <Dropdown.Item>Apply Online</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Admission Notice</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Admission Procedure</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Application Status</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Photo Gallery</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Announcements</Dropdown.Item>
+            </Link>
+            <Link>
+              <Dropdown.Item>Job</Dropdown.Item>
+            </Link>
+          </Dropdown>
         </Navbar.Link>
       </Navbar.Collapse>
     </Navbar>
