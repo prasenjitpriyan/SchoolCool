@@ -1,8 +1,9 @@
+import { Avatar, Button, Dropdown, Navbar, TextInput } from "flowbite-react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
-import { Avatar, Dropdown, Navbar, Button } from "flowbite-react";
 import { FaMoon, FaSun } from "react-icons/fa";
 import { useSelector, useDispatch } from "react-redux";
 import { toggleTheme } from "../redux/theme/themeSlice";
+import { signoutSuccess } from "../redux/user/userSlice";
 
 const Header = () => {
   const path = useLocation().pathname;
