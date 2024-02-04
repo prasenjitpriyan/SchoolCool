@@ -79,7 +79,7 @@ const Header = () => {
         </Navbar.Link>
         <Navbar.Link as={"div"}>
           <Dropdown arrowIcon={false} inline label={<Link>About Us</Link>}>
-            <Link>
+            <Link to="/history">
               <Dropdown.Item>History</Dropdown.Item>
             </Link>
             <Link>

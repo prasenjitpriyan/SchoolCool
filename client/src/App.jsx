@@ -6,6 +6,7 @@ import SignUp from "./pages/Signup";
 import SignIn from "./pages/SignIn";
 import HeaderTwo from "./components/HeaderTwo";
 import HeaderThree from "./components/HeaderThree";
+import History from "./pages/about/History";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="/" element={<Home />} />
         <Route path="/sign-up" element={<SignUp />} />
         <Route path="/sign-in" element={<SignIn />} />
+        <Route path="/history" element={<History />} />
       </Routes>
       <PageFooter />
     </BrowserRouter>
