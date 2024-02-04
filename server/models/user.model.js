@@ -22,6 +22,14 @@ const userSchema = new mongoose.Schema({
   isAdmin: {
     type: Boolean,
     default: false,
+  },
+  isParent: {
+    type: Boolean,
+    default: false,
+  },
+  isStudent: {
+    type: Boolean,
+    default: false,
   }
 }, { timestamps: true });
 
