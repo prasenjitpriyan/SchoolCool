@@ -7,7 +7,8 @@ export default {
   ],
   theme: {
     colors: {
-      "royalBlue": '#002366'
+      "royalBlue": '#002366',
+      "logo": "#E6E4A5"
     },
     extend: {},
   },

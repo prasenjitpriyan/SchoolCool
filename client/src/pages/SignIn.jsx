@@ -52,12 +52,14 @@ const SignIn = () => {
         <div className="flex-1">
           <Link to="/" className="text-4xl font-bold dark:text-white">
             <span className="px-2 py-1 bg-gradient-to-r from-indigo-500 via-purple-500 to-pink-500 rounded-lg text-white">
-              Prasenjit's
+              School
             </span>
-            Blog
+            -Cool
           </Link>
           <p className="text-sm mt-5">
-            This is my Blog Project. You can sign in with your email and
+            Overall, a well-designed school website can serve as a valuable
+            communication tool for the school community and help promote a
+            positive image of the school. You can sign up with your email and
             password or with Google
           </p>
         </div>

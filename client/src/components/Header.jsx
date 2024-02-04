@@ -36,7 +36,7 @@ const Header = () => {
       </Link>
       <div className="flex gap-2 md:order-2">
         <Button
-          className="w-12 h-10 hidden sm:inline"
+          className="w-12 h-12 hidden sm:inline"
           color="gray"
           pill
           onClick={() => dispatch(toggleTheme())}
@@ -66,7 +66,7 @@ const Header = () => {
           </Dropdown>
         ) : (
           <Link to="/sign-in">
-            <Button gradientDuoTone="purpleToBlue" outline>
+            <Button gradientDuoTone="purpleToBlue" outline className="mt-1">
               Sign In
             </Button>
           </Link>

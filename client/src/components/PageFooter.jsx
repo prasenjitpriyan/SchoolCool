@@ -18,10 +18,11 @@ const PageFooter = () => {
           </div>
           <div className="grid grid-cols-2 gap-8 sm:mt-4 sm:grid-cols-3 sm:gap-6">
             <div>
-              <Footer.Title title="about" />
+              <Footer.Title title="about us" />
               <Footer.LinkGroup col>
-                <Footer.Link href="#">Flowbite</Footer.Link>
-                <Footer.Link href="#">Tailwind CSS</Footer.Link>
+                <Footer.Link href="#">History</Footer.Link>
+                <Footer.Link href="#">Trustees & Governing Council</Footer.Link>
+                <Footer.Link href="#">SPS Managing Committee</Footer.Link>
               </Footer.LinkGroup>
             </div>
             <div>

@@ -7,11 +7,12 @@ const HeaderTwo = () => {
       <div className="navbar-start flex flex-auto">
         <img src={logo1} className="h-20 rounded-full" />
       </div>
-      <div className="navbar-center flex-auto">
+      <div className="navbar-center">
         <div className="text-center">
           <h1 className="text-2xl font-semibold">School-Cool</h1>
           <p className="text-xs p-2">
-            Affiliated to CBSE, New Delhi (Affiliation Number 2430107)
+            Affiliated to CBSE, New Delhi
+            <p>(Affiliation Number 2430107)</p>
           </p>
         </div>
       </div>
